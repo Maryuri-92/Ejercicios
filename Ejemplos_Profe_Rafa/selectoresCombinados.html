@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Combinación de selectores</title>
+    <style>
+        p {
+            color: red;
+        }
+        section p {
+            color: green;
+        }
+        section div p {
+            color: purple;
+        }
+        section > p {
+            text-decoration: underline;
+        }
+        article ~ section {
+            background-color: blue;
+        }
+        #tabla1 td {
+            padding: 10px;
+            border: solid 1px red;
+        }
+        #tabla1 td:hover {
+            background-color: red;
+            width: 200%;
+        }
+        #tabla2 td {
+            background-color: orange;
+        }
+        #tabla1 tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+        :n
+        #tabla1 tr:nth-child(odd) {
+            background-color: antiquewhite;
+        }
+        p .trozo {
+            color: black;
+        }
+        p.trozo {
+            color: blue;
+        }
+        #parrafoLargo::first-line {
+            color:orange;
+            font-weight: 900;
+        }
+
+        #parrafoLargo::first-letter {
+            font-size: 2em;
+        }
+        #parrafoLargo::selection {
+            background-color: chartreuse;
+        }
+
+        .oferta::after {
+            content: url("oferta.png");
+        }
+    </style>
+</head>
+<body>
+    <p>Este párrafo está directamente dentro de body</p>
+    <p>Este párrafo está directamente dentro de body</p>
+    <section>
+        <h1>titulo</h1>
+        <p>Este párrafo está dentro de una sección</p>
+    </section>
+    <article>
+        <p>Este párrafo está dentro de un articulo</p>
+    </article>
+    <section>
+        <div>
+            <p>Este párrafo está dentro de un div que está dentro de una sección</p>
+        </div>
+    </section>
+    <section>
+        <p>Este párrafo está dentro de una sección</p>
+    </section>
+    <ol>
+        <li class="oferta">La capital del d</li>
+        <li>lskjf asldfjlaskdjf</li>
+        <li class="oferta">aldkñsl akñalkdñs</li>
+    </ol>
+    <p id="parrafoLargo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit porro minus error eius repellat dolorum nostrum similique numquam commodi fugiat ab consequatur quaerat a libero facere tempora, ex repellendus provident. Lorem ipsum dolor, sit amet consectetur adipisicing elit. In quae ipsum labore tenetur, qui maxime nulla vero inventore nobis consequatur aut aspernatur voluptatum nihil, asperiores dolorum eum laudantium enim id!</p>
+    <table id="tabla1">
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+                <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+                <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+                <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+                <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+                <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr>
+            <td>1.3</td>
+            <td>1.4</td>
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+    </table>
+        <table id="tabla2">
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+        </tr>
+        <tr>
+            <td>2.3</td>
+            <td>2.4</td>
+        </tr>
+    </table>
+</body>
+</html>
