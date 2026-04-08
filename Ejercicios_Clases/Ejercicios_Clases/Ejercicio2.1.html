@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Aplicar los estilos indicados en cada elemento -->
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<style>
+		h1 {
+			text-transform: capitalize;
+			font-size: 20pt;
+			color: blue;
+			text-decoration: underline;
+		}
+
+		.parrafo1 {
+			font-family: cursive;
+			font-family: Verdana;
+			font-size: 14pt;
+
+		}
+
+		.parrafo2 {
+			word-spacing: 5px;
+		}
+
+		.mar {
+			font-family: cursive;
+			text-decoration-line: line-through;
+		}
+
+		.frase {
+			font-weight: bolder;
+			text-decoration: overline;
+		}
+	</style>
+	<title>Ejercicio 2</title>
+</head>
+
+<body>
+	<!-- Cada palabra del título comenzará por mayúsculas, tendrá tamaño de 20 puntos, color de letra azul y estará subrayado -->
+	<h1>Titulo de la página</h1>
+
+	<!-- Este párrafo aparecerá en cursiva, letra Verdana, tamaño 14 puntos. La palabra NASA es una abrebiatura que significa "Agencia Espacial Americana". Tendrá color de fondo gris claro -->
+	<p class="parrafo1">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus
+		malesuada
+		fermentum odio, eu condimentum sem vestibulum vulputate.<abbr style="background-color: rgb(105, 106, 107)"
+			Agencia Espacial Americana">NASA</abbr>.Nam
+		tellus odio, mollis vitae ullamcorper eu,
+		feugiat eget nisi.</p>
+
+	<!-- Este párrafo tendrá las palabras separadas 5 pixels. La frase desde "Vivamus" hasta "odio" estará en negrita y con línea por encima. -->
+	<p class="parrafo2">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <span
+			class="mar"><span class="frase">vivamus malesuada fermentum odio</span>, eu condimentum sem vestibulum
+			vulputate. Nam tellus
+			odio, mollis vitae ullamcorper eu, feugiat
+			eget nisi.</p>
+
+	<!-- Este párrafo tendrá sus líneas separadas 20 puntos, y estará todo en letras mayúsculas -->
+	<p style="line-height: 20pt;text-transform: uppercase;">Orci varius natoque penatibus et magnis dis parturient
+		montes, nascetur ridiculus mus. Vivamus
+		malesuada
+		fermentum odio, eu condimentum sem vestibulum vulputate. Nam tellus odio, mollis vitae ullamcorper eu, feugiat
+		eget nisi.</p>
+
+</body>
+
+</html>
