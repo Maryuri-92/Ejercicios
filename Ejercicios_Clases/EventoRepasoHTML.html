@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Repaso HTML</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        main {
+            padding: 15px;
+        }
+
+        .Enlaces a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .Enlaces a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .Enlaces .tabla {
+            text-align: left;
+        }
+
+        caption {
+            text-align: inherit;
+
+        }
+
+        table {
+            border: solid 2px black;
+            border-collapse: collapse;
+            text-align: left;
+            width: 50%;
+        }
+
+        th,
+        td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        form li {
+            margin: 10px;
+        }
+
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 15px;
+
+        }
+
+        footer a {
+            color: inherit;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif margin: 0;
+        }
+
+        [href^="mailto"] {
+            text-decoration: none;
+        }
+
+        input[type="text"]:focus {
+            background-color: red;
+        }
+
+        input[type="Email"] {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Evento de repaso <abbr title="HyperText Markup Language">HTML</abbr></h1>
+        <nav>
+            <ul class="Enlaces">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Programa</a></li>
+                <li><a href="">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre el evento</h2>
+            <p>Un encuentro para repasar los conceptos basicos de <abbr title="HyperText Markup Language">HTML</abbr>
+            </p>
+        </section>
+        <section>
+            <h2>Programa del dia</h2>
+            <ol>
+                <Li>Bienvenida y presentacion</Li>
+                <Li>Charla principal</Li>
+                <Li>Talleres practicos</Li>
+                <Li>Conclusion y despedida</Li>
+            </ol>
+        </section>
+        <table>
+            <caption>
+                <h2 class="tabla"> Tipos de entrada</h2>
+            </caption>
+            <tr>
+                <th>Tipo</th>
+                <th>Precio</th>
+                <th>Beneficio</th>
+            </tr>
+            <tr>
+                <td>Basica</td>
+                <td>5€</td>
+                <td>Acceso a charlas</td>
+            </tr>
+            <tr>
+                <td>Premium</td>
+                <td>10€</td>
+                <td>Charlas + talleres</td>
+            </tr>
+            <tr>
+                <td>VIP</td>
+                <td>20€</td>
+                <td>Todo lo anterior + zona exclusiva</td>
+            </tr>
+        </table>
+        <form>
+            <section>
+                <h2> Formulario de resgistro</h2>
+                <ul>
+                    <li><label>Nombre:<input type="text" name="Nombre"></label></li>
+                    <li><label>Email:<input type="email" name="Email"></label></li>
+                    <li><label> Tipo de entrada:<select name="tipodeentrada">
+                                <option value="Basica">Básica</option>
+                                <option value="Premium">Premium</option>
+                                <option value="VIP">VIP</option>
+                            </select></label></li>
+                    <li><label>Comentario:<textarea name="comentario"></textarea></label></li>
+                </ul>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Contacto:<a href="mailto:info@eventohtml.com">info@eventohtml.com</a></p>
+        <ul class="Enlaces">
+            <li><a href="">Aviso legal</a></li>
+            <li><a href="">Politica de privacidad</a></li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>
