@@ -14,6 +14,11 @@
         th {
             border: solid 2px black;
         }
+
+        .tdcolor {
+            background-color: aqua;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -31,7 +36,7 @@
         </tr>
         <tr>
             <td rowspan="2">Etiquetas de texto</td>
-            <td>p</td>
+            <td class="tdcolor">p</td>
             <td>Respresentan un parrafo</td>
             <td>
                 <pre>&lt;p&gt;Esto es un parrafo&lt;/p&gt;</pre>
@@ -39,7 +44,7 @@
         </tr>
         <tr>
             <code>
-            <td>blockquote</td>
+            <td class="tdcolor">blockquote</td>
             <td>Representa contenido extraido de otra fuente</td>
             <td><pre>&lt;blockquote&gt;
     &lt;p&gt;En lugar de la Mancha, de cuyo nombre no quiero acordarme,no ha mucho tiempo que vivia un hidalgo
@@ -50,7 +55,7 @@
         </tr>
         <tr>
             <td rowspan="2">Listas</td>
-            <td>ul</td>
+            <td class="tdcolor">ul</td>
             <td>Lista desordenada</td>
             <td>
                 <pre>
@@ -60,7 +65,7 @@
 &lt;/ul&gt;
         </pre>
         <tr>
-            <td>ol</td>
+            <td class="tdcolor">ol</td>
             <td>Lista ordenada</td>
             <td>
                 <pre>

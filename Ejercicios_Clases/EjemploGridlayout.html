@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            border: 1px solid black;
+        }
+
+        li {
+            border: solid red 1px;
+            display: block;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .contenedor {
+            border: 2px solid black;
+            width: 500px;
+            display: grid;
+            grid-template-columns: auto auto auto auto
+                /*repeat(4,auto);*/
+                /* grid-template-columns: repeat(4,100px) /*100px 100px 1000px 100px*/
+        }
+
+        /*.contenedor div {
+            width: 100px;
+        }*/
+
+        #div1 {
+            background-color: aqua;
+            grid-column: 1 / span 3;
+
+        }
+
+        #div2 {
+            background-color: blueviolet;
+            grid-column: span 2;
+
+        }
+
+        #div3 {
+            background-color: chartreuse;
+            grid-column: 1;
+
+        }
+
+        #div4 {
+            background-color: coral;
+
+        }
+
+        #div5 {
+            background-color: crimson;
+
+        }
+    </style>
+</head>
+
+<body>
+    Ejemplo de cambiar de block por un inline
+    <ol>
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+    </ol>
+    <h2> Ejemplo de Grid Layout</h2>
+    <section class="contenedor">
+        <div id="div1">DIV 1</div>
+        <div id="div2">DIV 2</div>
+        <div id="div3">DIV 3</div>
+        <div id="div4">DIV 4</div>
+        <div id="div5">DIV 5</div>
+    </section>
+</body>
+
+</html>
