@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .imagenes {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <ul>
+            <li><label><input type="radio" name="columnas" id="col1" checked onclick="columna1();">1 Columna</label>
+            </li>
+            <li><label><input type="radio" name="columnas" id="col2" onclick="columna2();">2 Columna</label></li>
+            <li><label><input type="radio" name="columnas" id="col3" onclick="columna3();">3 Columna</label></li>
+        </ul>
+    </fieldset>
+    <section id="imagenes" class="imagenes">
+        <img src="https://www.pineca.es/media/cache/avp_product_thumbnail/d/b/d/d/dbddc3c9662126be674c77abc95b7a1e721a39c6_600x435.jpeg"
+            alt="casa1">
+        <img src="https://www.pineca.es/media/cache/avp_product_thumbnail_webp/0/b/d/5/0bd581749d0b7e1aec71ed51cb17a77c194584df_III_Darla_0.jpg"
+            alt="casa2">
+        <img src="https://www.pineca.es/media/cache/avp_product_thumbnail_webp/4/8/f/1/48f1697436f898a90c8855265e135187164459ab_600x435.jpeg"
+            alt="casa3">
+    </section>
+
+    <script src="EjercicioImagenes.js"></script>
+</body>
+
+</html>
