@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #cuerpo {
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        #flecha1 {
+            height: 50px;
+            width: 100px;
+            font-size: 20pt;
+
+        }
+
+        #flecha2 {
+            height: 50px;
+            width: 100px;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body id="cuerpo">
+    <section class="contenedor">
+        <input type="button" value="⬅" id="flecha1" onclick="flechaIzq();">
+        <figure>
+            <img id="vaca"
+                src="https://w7.pngwing.com/pngs/924/639/png-transparent-cartoon-cow-black-and-white-dairy-cow-sitting-thumbnail.png"
+                alt="vaca">
+        </figure>
+        <input type="button" value="⮕" id="flecha2" onclick="flechaDer();">
+    </section>
+
+
+    <script src="carrusel.js"></script>
+</body>
+
+</html>

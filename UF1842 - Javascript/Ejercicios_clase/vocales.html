@@ -7,8 +7,13 @@
 </head>
 
 <body>
-    <input type="text">
-    <input type="button" value="vocales" onclick="contarVocales();">
+    <fieldset>
+        <legend>Contar vocales </legend>
+        <label for="cajaTexto">Introducir un texto</label>
+        <input type="text" id="cajaTexto">
+        <input type="button" value="vocales" onclick="contarVocales();">
+    </fieldset>
+    <div id="divResultado"></div>
 
     <script src="vocales.js"></script>
 </body>
