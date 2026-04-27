@@ -10,7 +10,7 @@ function pulsarNumero(numero) {
     } else {
         pantalla.value = pantalla.value + numero;
     }
-
+    
 }
 
 function pulsarOperacion(simbolo) {
@@ -22,7 +22,7 @@ function pulsarOperacion(simbolo) {
 
 function pulsarIgual() {
     let segundoNumero = parseInt(pantalla.value);
-    switch (operacion) {
+    switch(operacion) {
         case "+": pantalla.value = primerNumero + segundoNumero;
             break;
         case "-": pantalla.value = primerNumero - segundoNumero;
@@ -46,10 +46,12 @@ function pulsarC() {
 }
 
 function pulsarBorrarUltimo() {
-    //pantalla.value.slice(0.-1));
+    
+    //pantalla.value.slice(0,-1));
+
     let resto = pantalla.value % 10;
     let valor = pantalla.value - resto;
     pantalla.value = valor / 10;
-    //pantalla.value = math.floor(pantalla.value / 10);
 
+    //pantalla.value = Math.floor(pantalla.value / 10);
 }
