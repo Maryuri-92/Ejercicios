@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dosColumnas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 500px;
+        }
+        .tresColumnas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            width: 800px;
+        }
+        .cuatroColumnas {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            width: 1100px;
+        }
+        img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <select id="slcColumnas" onchange="cambiarColumnas2();">
+            <option value="dosColumnas">Dos columnas</option>
+            <option value="tresColumnas">Tres columnas</option>
+            <option value="cuatroColumnas">Cuatro columnas</option>
+        </select>
+    </div>
+    <section class="dosColumnas" id="seccionImagenes">
+        <img src="uno.png" alt="">
+        <img src="dos.png" alt="">
+        <img src="tres.png" alt="">
+        <img src="cuatro.png" alt="">
+        <img src="cinco.png" alt="">
+        <img src="seis.png" alt="">
+    </section>
+    
+    <script src="4. Galeria.js"></script>
+</body>
+</html>

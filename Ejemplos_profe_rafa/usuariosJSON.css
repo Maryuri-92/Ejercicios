@@ -1,0 +1,48 @@
+header {
+    text-align: center;
+}
+
+.contenedorUsuario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: outset 3px chartreuse;
+    margin: 20px;
+    max-width: 400px;
+    max-width: 500px;
+}
+
+.contenedorUsuario:hover {
+    transform: scale(1.1);
+}
+
+
+.nombreUsuario {
+    grid-column: span 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 900;
+    color: chartreuse;
+    background-color: black;
+    padding: 15px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+
+#datosUsuarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.empresa {
+    text-align: center;
+}
+
+.subtitulo {
+    font-style: italic;
+}
+
+.bs {
+    text-transform: capitalize;
+}

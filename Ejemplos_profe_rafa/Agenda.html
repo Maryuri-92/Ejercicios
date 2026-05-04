@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="Agenda.css">
+</head>
+
+<body onload="hoy()">
+    <header>
+        <span id="fechaHoy"></span>
+        <h1>Mi agenda</h1>
+
+
+        <img src="agenda.webp" alt="Icono de un calendario">
+    </header>
+    <nav>
+        <ul class="contenedorNav">
+            <li><a href="">Novedades</a></li>
+            <li><a href="">Perfil</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Donde</th>
+                    <th>Asunto</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla"></tbody>
+        </table>
+        <form action="">
+            <label for="txtAsunto">Asunto:</label>
+            <input type="text" name="asunto" id="txtAsunto">
+            <label for="txtDonde">Donde:</label>
+            <input type="text" name="donde" id="txtDonde">
+            <label for="txtFecha">Fecha:</label>
+            <input type="date" name="fecha" id="txtFecha">
+            <!-- se le asocia un id al boton para asignarle el evento click desde JS-->
+            <input type="button" value="Nueva cita" id="btnNuevaCita">
+        </form>
+    </main>
+    <footer>
+        &copy; El profe
+    </footer>
+    <script src="Agenda.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #pantallaResultado {
+            height: 50px;
+            border: solid 2px black;
+            font-size: 18pt;
+            text-align: center;
+        }
+        #div1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body onload="alCargar();">
+    <h3 id="pantallaResultado"></h3>
+    <div id="div1" onmouseover="ratonEncima();" onmouseout="ratonFuera();" ondblclick="dobleClick();" onwheel="ruedaRaton();"></div>
+    
+
+    <script src="eventos.js"></script>
+</body>
+</html>
