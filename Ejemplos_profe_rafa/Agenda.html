@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Agenda</title>
     <link rel="stylesheet" href="Agenda.css">
 </head>
-
-<body onload="hoy()">
+<body onload="verFechaHoy();">
     <header>
-        <span id="fechaHoy"></span>
         <h1>Mi agenda</h1>
-
-
-        <img src="agenda.webp" alt="Icono de un calendario">
+        <img src="imagenes/agenda.webp" alt="Icono de un calendario">
     </header>
     <nav>
         <ul class="contenedorNav">
@@ -41,14 +36,14 @@
             <input type="text" name="donde" id="txtDonde">
             <label for="txtFecha">Fecha:</label>
             <input type="date" name="fecha" id="txtFecha">
-            <!-- se le asocia un id al boton para asignarle el evento click desde JS-->
+        <!-- Le asigno un id al botón para asociarle el evento click desde Javascript-->
             <input type="button" value="Nueva cita" id="btnNuevaCita">
         </form>
     </main>
     <footer>
-        &copy; El profe
+        <span>&copy; El profe</span><span id="fechaHoy"></span>
     </footer>
+
     <script src="Agenda.js"></script>
 </body>
-
 </html>

@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>El Ahorcado</title>
     <link rel="stylesheet" href="ahorcado.css">
 </head>
-
-<body>
-
-    <div id="divPalabra"></div>
-    <input type="text" id="letraUsuario" maxlength="1">
-    <input type="button" id="comprobarL" value="Comprobar" onclick="comprobar();">
-    <input type="button" value="Nueva Partida" onclick="nuevaPartida();">
-    <img src="imagenesAhorcado/0.png" alt="" id="imagenesAhorcado">
+<body onload="nuevaPartida();">
+    
+    <section class="contenedorPrincipal">
+        <section class="contenedorJuego">
+            <div class="centrado">
+                <div id="divPalabra"></div>
+            </div>
+            <div class="entradaUsuario">
+                <input type="text" maxlength="1" id="txtLetraUsuario">
+                <input type="button" id="btnComprobar" value="Comprobar letra" onclick="comprobarLetra();">
+            </div>
+        </section>
+        <img src="imagenesAhorcado/0.png" alt="" id="imagenAhorcado">
+    </section>
+    <section class="centrado">
+        <input type="button" value="Nueva Partida" onclick="nuevaPartida();">
+    </section>
+    <section id="seccionLetras"></section>
     <script src="ahorcado.js"></script>
 </body>
-
 </html>

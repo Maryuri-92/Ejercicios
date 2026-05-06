@@ -45,8 +45,13 @@ function pulsarC() {
     //console.log(`Primer número = ${primerNumero} y operación = ${operacion}`);
 }
 
-function pulsarBorrarUltimo(){
+function pulsarBorrarUltimo() {
+    
+    //pantalla.value.slice(0,-1));
+
     let resto = pantalla.value % 10;
-    let valor = pantalla.value
-     
+    let valor = pantalla.value - resto;
+    pantalla.value = valor / 10;
+
+    //pantalla.value = Math.floor(pantalla.value / 10);
 }

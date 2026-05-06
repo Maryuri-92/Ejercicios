@@ -1,4 +1,4 @@
-const JSON_usuario = `[
+const JSON_USUARIOS = `[
   {
     "id": 1,
     "name": "Leanne Graham",
@@ -231,36 +231,36 @@ const JSON_usuario = `[
   }
 ]`;
 
-let seccionUsuarios = document.getElementById("datosUsuarios");
+let seccionDatosUsuarios = document.getElementById("datosUsuarios");
 
 window.addEventListener("load", () => {
-    let listaUsuarios = JSON.parse(JSON_usuario);
+    let listaUsuarios = JSON.parse(JSON_USUARIOS);
     let posicion = 0;
     let resultado = "";
-    while (posicion < listaUsuarios.length) {
+    while(posicion < listaUsuarios.length) {
         let usuario = listaUsuarios[posicion];
         let fichaUsuario = `
-<div class="contenedorUsuario">
-    <h2 class="nombreUsuario">${usuario.name}</h2>
-    <div>
-        <ul>
-            <li>${usuario.email}</li>
-            <li>Direcion: ${usuario.address.street}, ${usuario.address.city} (${usuario.address.zipcode})</li>
-            <li>Telefono: ${usuario.phone}</li>
-            <li><a href="http://${usuario.website}">Pagina web</a></li>
-        </ul>
-    </div>
-    <div class="empresa">
-        <hgroup>
-            <h3>${usuario.company.name}</h3>
-            <p class=""subtitulo">${usuario.company.catchPhrase}</p>
-        </hgroup>
-            <p class="bs">${usuario.company.bs}</p>
-    </div>
-</div>
-`;
+        <div class="contenedorUsuario">
+            <h2 class="nombreUsuario">${usuario.name}</h2>
+            <div>
+                <ul>
+                    <li>${usuario.email}</li>
+                    <li>Dirección: ${usuario.address.street}, ${usuario.address.city} (${usuario.address.zipcode})</li>
+                    <li>Tlf: ${usuario.phone}</li>
+                    <li><a href="http://${usuario.website}" target="_blank">Página web</a></li>
+                </ul>
+            </div>
+            <div class="empresa">
+                <hgroup>
+                    <h3>${usuario.company.name}</h3>
+                    <p class="subtitulo">${usuario.company.catchPhrase}</p>
+                </hgroup>
+                <p class="bs">${usuario.company.bs}</p>
+            </div>
+        </div>
+        `;
         resultado = resultado + fichaUsuario;
         posicion++;
     }
-    seccionUsuarios.innerHTML = resultado;
+    seccionDatosUsuarios.innerHTML = resultado;
 });

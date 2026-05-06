@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="number" id="cajaMoneda">
+    <ul>
+        <li><input type="radio" value="1.18" name="moneda">Dolar 1.18</li>
+        <li><input type="radio" value="0.86" name="moneda">Libra 0.86</li>
+        <li><input type="radio" value="183.82" name="moneda">Yen 183.82</li>
+    </ul>
+    <input type="button" value="Conversor" onclick="convertir();">
+    <div id="resultado"></div>
+
+
+
+    <script src="monedas.js"></script>
+</body>
+
+</html>
