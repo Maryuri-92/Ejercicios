@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Número 1: <input type="number" id="txtNumero1">
+    Número 2: <input type="number" id="txtNumero2">
+    <select id="slcOperacion" onchange="calcular();">
+        <option value="" disabled selected>Selecciona una operación</option>
+        <option value="S">Sumar</option>
+        <option value="R">Restar</option>
+        <option value="M">Multiplicar</option>
+        <option value="D">Dividir</option>
+    </select>
+    <div id="divResultado"></div>
+
+<script src="calculadora2.js"></script>
+</body>
+</html>
