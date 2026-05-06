@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista doble</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <select id="listaIzquierda" size="6">
+        <option value="1">Opcion 1</option>
+        <option value="2">Opcion 2</option>
+        <option value="3">Opcion 3</option>
+        <option value="4">Opcion 4</option>
+        <option value="5">Opcion 5</option>
+        <option value="6">Opcion 6</option>
+    </select>
+    <div>
+        <input type="button" value=">" onclick="pasarUnoDerecha();">
+        <input type="button" value=">>" onclick="pasarTodosDerecha();">
+        <input type="button" value="<" onclick="pasarUnoIzquierda();">
+        <input type="button" value="<<" onclick="pasarTodosIzquierda();">
+    </div>
+    <select id="listaDerecha" size="6"></select>
+
+    <script src="listaDoble.js"></script>
+</body>
+</html>

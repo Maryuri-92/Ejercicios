@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="txtTexto">Intorduce un texto</label>
+    <input type="text" id="txtTexto">
+    <input type="button" value="length" onclick="metodo1();">
+    <input type="button" value="indexOf('la')" onclick="metodo2();">
+    <input type="button" value="lastIndexOf('la')" onclick="metodo3();">
+    <input type="button" value="slice(0,8)" onclick="metodo4();">
+    <input type="button" value="slice(8,9)" onclick="metodo5();">
+    <input type="button" value="slice(1,8)" onclick="metodo5_1();">
+    <!--el metodo substring es igual que el slice pero no acepta parametros negativos-->
+    <input type="button" value="substr(5,3)" onclick="metodo6();">
+    <input type="button" value="replace('a','o')" onclick="metodo7();">
+    <input type="button" value="replaceAll('a', 'o')" onclick="metodo8();">
+    <input type="button" value="replaceAll(',', '')" onclick="metodo9();">
+    <input type="button" value="trim()" onclick="metodo10();">
+    <input type="button" value="charAt(4)" onclick="metodo11();">
+    <input type="button" value="split('-')" onclick="metodo12();">
+    <input type="button" value="split('')" onclick="metodo13();">
+    <div id="divResultado"></div>
+
+
+
+
+
+    <script src="metodosString.js"></script>
+</body>
+
+</html>
